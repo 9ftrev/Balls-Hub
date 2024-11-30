@@ -68,7 +68,8 @@ local Toggle = Tab:CreateToggle({
 local Button = Tab:CreateButton({
    Name = "Universal Esp",
    Callback = function()
-local Settings = {
+    -- Universal Tracer
+    local Settings = {
     Box_Color = Color3.fromRGB(255, 0, 0),
     Tracer_Color = Color3.fromRGB(255, 0, 0),
     Tracer_Thickness = 1,

@@ -65,7 +65,7 @@ local Toggle = Tab:CreateToggle({
    Callback = function(Value)
    end,
 })
-local Toggle = Tab;CreateButton({
+local Toggle = Tab:CreateButton({
     Name = "Universal Esp",
     Callback = function()
 local Settings = {
@@ -182,3 +182,5 @@ local function ESP(plr)
                         end
                         library.tracer.To = Vector2.new(HumPos.X, HumPos.Y + DistanceY*2)
                         library.blacktracer.
+   end,
+})

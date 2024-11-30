@@ -50,7 +50,7 @@ Rayfield:Notify({
    Image = "rewind",
 })
 local Button = Tab:CreateButton({
-   Name = "Button That Does Nothing",
+   Name = "Button That speeds up",
    Callback = function(local player = game.Players.LocalPlayer
 
 -- Wait for the character to load

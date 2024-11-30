@@ -21,7 +21,7 @@ local Window = Rayfield:CreateWindow({
       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
    },
 
-   KeySystem = true, -- Set this to true to use our key system
+   KeySystem = false, -- Set this to true to use our key system
    KeySettings = {
       Title = "Untitled",
       Subtitle = "Key System",
@@ -51,7 +51,16 @@ Rayfield:Notify({
 })
 local Button = Tab:CreateButton({
    Name = "Button That Does Nothing",
-   Callback = function()
+   Callback = function(local player = game.Players.LocalPlayer
+
+-- Wait for the character to load
+player.CharacterAdded:Wait()
+
+-- Get the humanoid
+local humanoid = player.Character:WaitForChild("Humanoid")
+
+-- Increase the walk speed by 100
+humanoid.WalkSpeed = humanoid.WalkSpeed + 100)
    -- The function that takes place when the button is pressed
    end,
 })
